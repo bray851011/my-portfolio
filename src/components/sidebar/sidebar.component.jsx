@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
+
+import Links from './Links/links.component';
 import './sidebar.styles.scss'
 
 const Sidebar = () => {
@@ -8,14 +9,14 @@ const Sidebar = () => {
 
     const variants = {
         open: {
-            clipPath:'circle(1200px at calc(100% - 100px) 50px)',
+            clipPath:'circle(1200px at calc(100% - 50px) 50px)',
             transition: {
                 type: "spring",
                 stiffness: 20,
             }
         },
         closed: {
-            clipPath: 'circle(30px at calc(100% - 100px) 50px)',
+            clipPath: 'circle(30px at calc(100% - 50px) 50px)',
             transition: {
                 delay: 0.1,
                 type: "spring",
@@ -28,13 +29,7 @@ const Sidebar = () => {
     return (
         <motion.div className='sidebar' animate={open ? 'open': 'closed'}>
             <motion.div className='bg' variants={variants}>
-                <div className='links'>
-                    <Link>Home</Link>
-                    <Link>Project</Link>
-                    <Link>Certificate</Link>
-                    <Link>Course</Link>
-                    <Link>Contact</Link>
-                </div>
+                <Links />
             </motion.div>
 
             <button className='sidebar-button' onClick={() => {
@@ -71,7 +66,7 @@ const Sidebar = () => {
                     />                 
                 </svg>
             </button>
-            
+
         </motion.div>
     )
 }

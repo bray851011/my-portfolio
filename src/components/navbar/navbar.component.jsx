@@ -14,7 +14,6 @@ const Navbar = () => {
             <Sidebar />
             <div className='wrapper'>
                 <Link className="logo-container" to='/'>
-                    <img className="icon" src={workon} alt=""/>
                     <span>Bray's Portfolio</span>
                 </Link>
                 <div className='social'>

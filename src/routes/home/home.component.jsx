@@ -9,6 +9,7 @@ const Home = () => {
                 <div className='section-container'>
                     <Navbar/>    
                     <div >
+                        asdfasdfasd
                     </div>
                 </div>
             </section>
