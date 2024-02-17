@@ -17,15 +17,15 @@ const Intro = () => {
                     <h1>Software Developer and Graduate Student</h1>
                     <h3>A self-motivated and hardworking individual that has the ability to pick things up quick and learn new knowledge in a fast pace. Passionate in solving problems and not afraid of tackling challenges.</h3>
                     <div className='buttons'>
-                        <button>one</button>
-                        <button>one</button>
+                        <button>My resume</button>
+                        <button>Hire Me</button>
                         <Link to='https://www.linkedin.com/in/ray-juan/'><img className="icon" src={linkedin} alt=""/></Link>
                         <Link to=''><img className="icon" src={github} alt=""/></Link>
                         <Link to=''><img className="icon" src={leetcood} alt=""/></Link>
                         <Link to=''><img className="icon" src={facebook} alt=""/></Link>
                         <Link to=''><img className="icon" src={instagram} alt=""/></Link>
                     </div>
-                    <img className='icon' src={scroll} alt=''/>
+                    <img className='scroll' src={scroll} alt=''/>
                 </div>
 
                 <div className='image-container'>
