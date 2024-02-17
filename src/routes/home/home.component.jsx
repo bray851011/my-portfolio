@@ -1,3 +1,5 @@
+
+import Intro from '../../components/intro/intro.component';
 import Navbar from '../../components/navbar/navbar.component';
 import './home.styles.scss'
 
@@ -8,9 +10,7 @@ const Home = () => {
             <section>
                 <div className='section-container'>
                     <Navbar/>    
-                    <div >
-                        asdfasdfasd
-                    </div>
+                    <Intro />
                 </div>
             </section>
 

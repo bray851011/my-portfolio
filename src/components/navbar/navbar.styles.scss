@@ -3,36 +3,17 @@ a{
 }
 
 .navbar-container {
-    height: 100px;
+    height: 15vh;
 
     .wrapper{
         max-width: 1366px;
+        height: 100%;
         margin: auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         .logo-container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            span{
-                font-weight: bold;
-                font-size: x-large;
-            }
-            .icon{
-                height: 50px;
-                width: 50px;
-            }
-        }
 
-        .social{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .icon{
-                height: 50px;
-                width: 50px;
-            }
         }
     }
 }
