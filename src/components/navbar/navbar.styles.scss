@@ -12,11 +12,15 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
+        
         h1{
             font-family: "Black Ops One", system-ui;
             letter-spacing: 10px;
             font-size: 50px;
-            color: rgb(87, 87, 255);
+            color: rgb(134, 134, 250);
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
         }
     }
 }

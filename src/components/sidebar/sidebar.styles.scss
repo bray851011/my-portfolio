@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     background-color: #87C4FF;
+    position: absolute;
+
     .bg {
         position: fixed;
         top: 0;
@@ -11,6 +13,7 @@
         bottom: 0;
         width: 400px;
         background: #87C4FF;
+        z-index: 99;
     }
 
     .sidebar-button {
@@ -22,6 +25,8 @@
         right: 25px;
         background-color: transparent;
         border: none;
+        z-index: 99;
         cursor: pointer;
     }
+
 }
