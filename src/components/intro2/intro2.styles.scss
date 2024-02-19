@@ -1,0 +1,23 @@
+.intro2-container {
+    height: 100vh;
+    background: linear-gradient(180deg, #ade2ff, #E0F4FF);
+    overflow: hidden;
+
+    .timeline-container {
+        display: flex;
+        max-width: 1366px;
+        height: 60%;
+        margin: auto;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+    }
+
+    .skills-container {
+        display: flex;
+        max-width: 1366px;
+        height: 30%;
+        margin: auto;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}

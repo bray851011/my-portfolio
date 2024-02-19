@@ -1,5 +1,6 @@
 
 import Intro from '../../components/intro/intro.component';
+import Intro2 from '../../components/intro2/intro2.component';
 import Navbar from '../../components/navbar/navbar.component';
 import './home.styles.scss'
 
@@ -8,13 +9,14 @@ const Home = () => {
         <div>
 
             <section>
-                <div className='section-container'>
-                    <Navbar/>    
-                    <Intro />
-                </div>
+                <Navbar/>    
+                <Intro />
             </section>
 
-            <section>Section2</section>
+            <section>
+                <Intro2 />
+            
+            </section>
             <section>Section3</section>
             <section>Section4</section>
         </div>
