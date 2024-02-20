@@ -3,7 +3,7 @@ import './links.sytles.scss'
 
 const Links = () => {
     
-    const items = ["Homepage", "Project", "Certificate", "Course", "Contact"]
+    const items = ["Homepage", "Project", "Contact"]
     
     const variants = {
         open: {

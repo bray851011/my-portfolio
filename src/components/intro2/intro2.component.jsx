@@ -15,7 +15,6 @@ const Intro2 = () => {
             <div className='skills-container'>
                 <Skills />
             </div>
-            
         </div>
     )
 }
