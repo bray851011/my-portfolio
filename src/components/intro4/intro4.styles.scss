@@ -1,23 +1,84 @@
 .intro4-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background: linear-gradient(0deg, #ade2ff, #E0F4FF);
     overflow: hidden;
 
-    .timeline-container {
-        display: flex;
-        max-width: 1366px;
-        height: 60%;
-        margin: auto;
-        margin-top: 4vh;
-        margin-bottom: 2vh;
+    .course-heading {
+        font-size: 30px;
+        color: rgb(134, 134, 250);
+        border: 2px solid black;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        padding: 5px;
     }
 
-    .skills-container {
+    .class-wrapper {
         display: flex;
         max-width: 1366px;
-        height: 30%;
-        margin: auto;
-        margin-top: 4vh;
-        margin-bottom: 2vh;
+        height: 100%;
+        width: 100%;
+        // margin: auto;
+
+        .school {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 1vh;
+            // justify-content: center;
+            // margin: auto;
+            height: 90%;
+            width: 50%;
+
+            .inner-heading {
+                font-size: 20px;
+                color: rgb(134, 134, 250);
+                border-bottom: 2px solid black;
+                letter-spacing: 2px;
+                padding: 5px;
+            }
+
+            .progressbar-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10vh;
+                width: 100%;
+                gap: 50px;
+                .progressbar {
+                    height: 10vh;
+                    width: 10vh;
+                }
+            }
+        }
+        .online {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 1vh;
+            // justify-content: center;
+            // margin: auto;
+            height: 90%;
+            width: 50%;
+
+            .inner-heading {
+                font-size: 20px;
+                color: rgb(134, 134, 250);
+                border-bottom: 2px solid black;
+                letter-spacing: 2px;
+                padding: 5px;
+            }
+        }
     }
+
+
 }
