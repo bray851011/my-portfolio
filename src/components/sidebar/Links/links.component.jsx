@@ -3,7 +3,11 @@ import './links.sytles.scss'
 
 const Links = () => {
     
-    const items = ["Homepage", "Project", "Contact"]
+    const items = [
+        {"key": 1, "item": "Homepage", "link": "/"},
+        {"key": 2, "item": "Project/Cert.", "link": "/project"},
+        {"key": 3, "item": "Contact", "link": "/contact"},
+    ]
     
     const variants = {
         open: {
@@ -34,13 +38,13 @@ const Links = () => {
         <motion.div className='links' variants={variants}>
             {items.map((item) => (
                 <motion.a 
-                    href='/' 
-                    key={item} 
+                    href={item.link} 
+                    key={item.key} 
                     variants={itemVariants}
                     whileHover={{scale: 1.1}}
                     whileTap={{scale:0.9}}
                 >
-                    {item}
+                    {item.item}
                 </motion.a>
             ))}
         </motion.div>
