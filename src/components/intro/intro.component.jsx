@@ -2,11 +2,9 @@ import { Link } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 
-import facebook from '../../assets/facebook.svg'
 import github from '../../assets/github.svg'
-import leetcood from '../../assets/leetcode.svg'
+import leetcode from '../../assets/leetcode.svg'
 import linkedin from '../../assets/linkedin.svg'
-import instagram from '../../assets/instagram.svg'
 import mypic from '../../assets/mypic.png';
 import scroll from '../../assets/scroll.svg'
 import './intro.styles.scss'
@@ -80,13 +78,33 @@ const Intro = () => {
                     
                     <motion.h2 variants={textVariants}>A self-motivated and hardworking individual that has the ability to pick things up quick and learn new knowledge in a fast pace. Passionate in solving problems and not afraid of tackling challenges.</motion.h2>
                     <motion.div className='buttons' variants={textVariants}>
-                        <button>Check out my resume</button>
-                        <button>Hire Me</button>
-                        <Link to='https://www.linkedin.com/in/ray-juan/'><img className="icon" src={linkedin} alt=""/></Link>
-                        <Link to=''><img className="icon" src={github} alt=""/></Link>
-                        <Link to=''><img className="icon" src={leetcood} alt=""/></Link>
-                        <Link to=''><img className="icon" src={facebook} alt=""/></Link>
-                        <Link to=''><img className="icon" src={instagram} alt=""/></Link>
+                        <Link 
+                            to='https://drive.google.com/file/d/16kcsHoyi7fuhh6GgXrm0-VM4J07w2Qvh/view?usp=sharing'
+                            target="_blank" rel="noopener noreferrer"
+                        >
+                            <button>Check out my resume</button>
+                        </Link>
+                        <Link to='/contact'>
+                            <button>Hire Me</button>
+                        </Link>
+                        <Link 
+                            to='https://www.linkedin.com/in/ray-juan/'
+                            target="_blank" rel="noopener noreferrer"
+                        >
+                            <img className="icon" src={linkedin} alt=""/>
+                        </Link>
+                        <Link 
+                            to='https://leetcode.com/BrayJ/'
+                            target="_blank" rel="noopener noreferrer"
+                        >
+                            <img className="icon" src={leetcode} alt=""/>
+                        </Link>
+                        <Link 
+                            to='https://github.com/bray851011'
+                            target="_blank" rel="noopener noreferrer"
+                        >
+                            <img className="icon" src={github} alt=""/>
+                        </Link>
                     </motion.div>
                     <motion.img variants={textVariants} animate="scrollButton" className='scroll' src={scroll} alt=''/>
                 </motion.div>
