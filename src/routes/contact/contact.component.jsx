@@ -79,7 +79,10 @@ const Contact = () => {
                         </Link>
                     </motion.div>
                     <motion.div className='icon-container' variants={leftVariants}>
-                        <Link to='' target="_blank" rel="noopener noreferrer">
+                        <Link 
+                            to='https://drive.google.com/file/d/16kcsHoyi7fuhh6GgXrm0-VM4J07w2Qvh/view?usp=sharing'
+                            target="_blank" rel="noopener noreferrer"
+                        >
                             <button>Check out my resume</button>
                         </Link>
                     </motion.div>
