@@ -1,0 +1,128 @@
+.base {
+    background: linear-gradient(0deg, #ade2ff, #E0F4FF);
+}
+
+.contact {
+    height: 85vh;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+
+    .text-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .icon-container {
+            display: flex;
+            height: 40px;
+            align-items: center;
+            justify-content:baseline;
+            gap: 20px;
+            .icon {
+                height: 40px;
+                width: 40px;
+            }
+            button{
+                padding: 20px;
+                border-radius: 10px;
+                background-color: rgb(20, 33, 61);
+                border: 1px solid rgb(20, 33, 61);
+                color: white;
+                margin-right: 20px;
+                font-weight: bold;
+                font-size: large;                   
+                cursor: pointer;
+            }
+
+            button:hover {
+                padding: 20px;
+                border-radius: 10px;
+                background-color: white;
+                border: 1px solid rgb(20, 33, 61);
+                color: black;
+                margin-right: 20px;
+                font-weight: bold;
+                font-size: large;                    
+                cursor: pointer;
+            }
+            
+            span {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            .linkedin {
+                text-decoration: underline;
+                color: blue;
+            }
+        }
+
+        h1 {
+            font-size: 50px;
+            // line-height: 88px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "Open Sans", sans-serif;
+        }
+
+    }
+
+    .form-container {
+        flex: 1;
+        position: relative;
+
+        .phoneSvg {
+            position: absolute;
+            margin: auto;
+            stroke: rgb(134, 134, 250);  
+            z-index: -1;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            gap: 20px;
+
+            input, textarea {
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid black;
+                color: black;
+                border-radius: 5px;
+            }
+
+            button{
+                padding: 20px;
+                border-radius: 10px;
+                background-color: rgb(20, 33, 61);
+                border: 1px solid rgb(20, 33, 61);
+                color: white;
+                margin-right: 20px;
+                font-weight: bold;
+                font-size: large;                   
+                cursor: pointer;
+            }
+
+            button:hover {
+                padding: 20px;
+                border-radius: 10px;
+                background-color: white;
+                border: 1px solid rgb(20, 33, 61);
+                color: black;
+                margin-right: 20px;
+                font-weight: bold;
+                font-size: large;                    
+                cursor: pointer;
+            }
+        }
+    }
+
+    
+}
