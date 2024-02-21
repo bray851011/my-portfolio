@@ -10,7 +10,8 @@ import { ReactComponent as PostgreSQLIcon } from '../../assets/postgresql.svg';
 import { ReactComponent as AWSIcon } from '../../assets/aws.svg';
 import { ReactComponent as GitIcon } from '../../assets/git.svg';
 import { ReactComponent as FastAPIIcon } from '../../assets/fastapi.svg';
-
+import { ReactComponent as HtmlIcon } from '../../assets/html.svg';
+import { ReactComponent as CssIcon } from '../../assets/css.svg';
 
 
 import './skills.styles.scss'
@@ -30,6 +31,8 @@ const Skills = () => {
         { id: 10, name: 'PostgreSQL', Icon: PostgreSQLIcon },
         { id: 11, name: 'FastAPI', Icon: FastAPIIcon },
         { id: 12, name: 'Git', Icon: GitIcon },
+        { id: 13, name: 'Html', Icon: HtmlIcon },
+        { id: 14, name: 'Css', Icon: CssIcon },
     ];
 
     return (
@@ -42,7 +45,6 @@ const Skills = () => {
                         <div class="icon-text">{icon.name}</div>
                     </div>
                 ))}
-                asdfasdf
             </div>
         </div>
     )

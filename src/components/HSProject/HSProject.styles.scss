@@ -1,0 +1,112 @@
+.project-scroll-container {
+    // position: relative;
+    height: 200vh;
+    .sticky-container {
+        position: sticky;
+        // max-width: 1366px;
+        // margin: auto;
+        top: 0;
+        display: flex;
+        height: 100vh; /* Full height of the viewport */
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: linear-gradient(0deg, #ade2ff, #E0F4FF);
+
+        .scroll-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Black Ops One", system-ui;
+            letter-spacing: 5px;
+            font-size: 50px;
+
+        }
+
+        .motion-div {
+            height: 50%;
+            // width: 60%;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            // background-color: white;
+            gap: 10vh;
+
+            .certificate-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 15vh;
+                margin-bottom: 15vh;
+                // height: 60%;
+                width: 50vw;
+                // border: 1px solid black;
+                // background-color: #fdf6ed;
+                // border-radius: 10px;
+                
+                .cert-left {
+                    .cer-image {
+                        height: 50vh;
+                        width: auto;
+                        padding-right: 40px;
+                    }
+                }
+
+                .cert-right {
+
+                    h1, h2 {
+                        font-family: "Black Ops One", system-ui;
+                    }
+
+                    p {
+                        font-weight: bold;
+                        font-size: large;                        
+                    }
+
+                    button{
+                        padding: 20px;
+                        border-radius: 10px;
+                        background-color: rgb(20, 33, 61);
+                        border: 1px solid rgb(20, 33, 61);
+                        color: white;
+                        // margin-right: 20px;
+                        font-weight: bold;
+                        font-size: large;                   
+                        cursor: pointer;
+                    }
+        
+                    button:hover {
+                        padding: 20px;
+                        border-radius: 10px;
+                        background-color: white;
+                        border: 1px solid rgb(20, 33, 61);
+                        color: black;
+                        // margin-right: 20px;
+                        font-weight: bold;
+                        font-size: large;                    
+                        cursor: pointer;
+                    }
+                    .icon-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        gap: 10px;
+                        .icon {
+                            height: 60px;
+                            width: 60px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    
+}
+  
+  
+  
+  
