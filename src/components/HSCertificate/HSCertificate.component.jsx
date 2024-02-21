@@ -17,7 +17,7 @@ const HSCertificate = () => {
       target: ref,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["50%", "-40%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["42%", "-40%"]);
   
     return (
         <div ref={ref} className="scroll-container">
