@@ -1,0 +1,31 @@
+.project-container {
+
+    .first-section {
+        height: 30vh;
+        background: linear-gradient(0deg, #ade2ff, #E0F4FF);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: "Black Ops One", system-ui;
+            letter-spacing: 10px;
+            font-size: 50px;
+        }
+
+    }
+
+    .third-section {
+        height: 50vh;
+        background: linear-gradient(0deg, #ade2ff, #E0F4FF);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: "Black Ops One", system-ui;
+            letter-spacing: 10px;
+            font-size: 50px;
+        }
+    }
+}
