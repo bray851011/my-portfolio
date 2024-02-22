@@ -9,28 +9,18 @@ import './timeline.styles.scss'
 
 const TimeLine = () => {
 
-    const variants = {
-        initial: {
-            y: -100,
-            opacity: 0,
-        },
-        animate: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.5,
-
-            }
-        }
-    }
-
     return (
-        <div className='timelines'>
+        <div className='timelines' >
             <div className='timeline1'>
                 <motion.h1 
-                    variants={variants}
-                    initial="initial"
-                    animate="animate"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0, x: -100}
+                    }}
                 >
                     Education
                 </motion.h1>
@@ -62,9 +52,14 @@ const TimeLine = () => {
             
             <div className='timeline2'>
                 <motion.h1 
-                    variants={variants}
-                    initial="initial"
-                    animate="animate"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0, x: -100}
+                    }}
                 >
                     Experience
                 </motion.h1>

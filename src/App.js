@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Home from './routes/home/home.component';
 import Project from './routes/proejct/project.component';
 import Contact from './routes/contact/contact.component';
-import Navbar from './components/navbar/navbar.component';
 
 const App = () => {
   return (
