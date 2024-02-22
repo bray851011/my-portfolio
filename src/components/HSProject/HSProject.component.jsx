@@ -51,7 +51,6 @@ const HSProject = () => {
                                 <div className="button-container">
                                     <Link 
                                         to="/"
-                                        target="_blank" rel="noopener noreferrer"
                                     >
                                         <button>Visit</button>
                                     </Link>

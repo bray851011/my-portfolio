@@ -84,7 +84,7 @@ const Intro = () => {
                         >
                             <button>Check out my resume</button>
                         </Link>
-                        <Link to='/contact'>
+                        <Link to='contact'>
                             <button>Hire Me</button>
                         </Link>
                         <Link 
