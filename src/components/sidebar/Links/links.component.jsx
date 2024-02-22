@@ -4,9 +4,9 @@ import './links.sytles.scss'
 const Links = () => {
     
     const items = [
-        {"key": 1, "item": "Homepage", "link": "https://bray851011.github.io/my-portfolio/"},
-        {"key": 2, "item": "Project/Cert.", "link": "https://bray851011.github.io/my-portfolio/project"},
-        {"key": 3, "item": "Contact", "link": "https://bray851011.github.io/my-portfolio/contact"},
+        {"key": 1, "item": "Homepage", "link": "./"},
+        {"key": 2, "item": "Project/Cert.", "link": "project"},
+        {"key": 3, "item": "Contact", "link": "contact"},
     ]
     
     const variants = {
