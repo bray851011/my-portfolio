@@ -67,7 +67,7 @@ const TimeLine = () => {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         icon={<img src={biolifeLogo} alt='' style={{height: "40px", width: "40px"}}/>}
-                        date="1/2023 - 12/2023"                    
+                        date="Jan. 2023 - Dec. 2023"                    
                     >
                         <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
                         <h4 className="vertical-timeline-element-subtitle">Taiwan</h4>

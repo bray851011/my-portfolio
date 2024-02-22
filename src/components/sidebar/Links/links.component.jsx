@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import './links.sytles.scss'
+import { Link } from 'react-router-dom';
 
 const Links = () => {
     
     const items = [
-        {"key": 1, "item": "Homepage", "link": "./"},
-        {"key": 2, "item": "Project/Cert.", "link": "project"},
-        {"key": 3, "item": "Contact", "link": "contact"},
+        {"key": 1, "item": "Homepage", "link": "/"},
+        {"key": 2, "item": "Project/Cert.", "link": "/project"},
+        {"key": 3, "item": "Contact", "link": "/contact"},
     ]
     
     const variants = {
@@ -37,15 +38,14 @@ const Links = () => {
     return (
         <motion.div className='links' variants={variants}>
             {items.map((item) => (
-                <motion.a 
-                    href={item.link} 
+                <motion.div
                     key={item.key} 
                     variants={itemVariants}
                     whileHover={{scale: 1.1}}
                     whileTap={{scale:0.9}}
                 >
-                    {item.item}
-                </motion.a>
+                    <Link to={item.link}><span>{item.item}</span></Link>
+                </motion.div>
             ))}
         </motion.div>
     )

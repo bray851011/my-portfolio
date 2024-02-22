@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import { ReactComponent as PythonIcon } from '../../assets/python.svg';
 import { ReactComponent as JavaIcon } from '../../assets/java.svg';
 import { ReactComponent as JavaScriptIcon } from '../../assets/javascript.svg';
@@ -37,15 +39,40 @@ const Skills = () => {
 
     return (
         <div className='skills'>
-            <h1>Skills</h1>
-            <div className='svg-container'>
+            <motion.h1
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    visible: { opacity: 1, x: 0 },
+                    hidden: { opacity: 0, x: -100 }
+                }}
+            >
+                Skills</motion.h1>
+            <motion.div 
+                className='svg-container'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.1, staggerChildren: 0.1 }}
+                variants={{
+                    hidden : { opacity: 0, scale: 0},
+                    visible: { opacity: 1, scale: 1 }
+                }}
+            >
                 {svgIcons.map(icon => (
-                    <div className='svg-container'>
-                        <icon.Icon id={icon.id} className='svg-icon'/>
+                    <motion.div className='svg-container'>
+                        <motion.div variants={{
+                            hidden : { opacity: 0, y: -100},
+                            visible: { opacity: 1, y: 0 }
+                        }}>
+                            <icon.Icon id={icon.id} className='svg-icon'/>
+                        </motion.div>
                         <div class="icon-text">{icon.name}</div>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </div>
     )
 }
